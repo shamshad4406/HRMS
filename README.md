@@ -1,54 +1,59 @@
-IEPMS – Innobles Employee Payroll Management System
-A web-based Human Resource Management System (HRMS) built with Laravel 12 that brings employee records, payroll, attendance, leave and reimbursements into one role-based application.
-Status: In active development.
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-✨ Features
-👤 Employee Management
-Complete employee profile: personal info, employment details, salary, bank details, emergency contact
-Secure KYC / document uploads (Aadhaar, PAN, resume) served only to the owner or an admin
-Employee activation workflow with password setup
-Activate / deactivate employees
-💰 Payroll
-Per-employee salary structure (HRA, special/other allowance, PF / ESI / PT flags, monthly TDS)
-Company-level payroll rules (PF/ESI rates, professional tax, weekly off, late-mark rule)
-Monthly salary generation with automatic deductions (PF, ESI, tax, unpaid leave, absence, late)
-Review & edit deductions → approval workflow → payment recording → downloadable payslips
-Bulk approval, payment history, partial/cumulative payments with overpayment protection
-🕒 Attendance
-Daily check-in / check-out with face-capture verification
-One check-in per day, attendance history, admin-only deletion
-🌴 Leave Management
-Configurable leave types (Casual, Sick, Earned, Maternity, Paternity, custom)
-Leave balances, overlap checks, attachments (e.g. medical certificate)
-Approval workflow, leave calendar, history, company holidays
-🧾 Reimbursements
-Category-based claims with per-claim and per-month limits
-Multi-item claims, receipt upload
-Approve / reject (single or bulk), payment processing
-Approved claims can be added directly into payroll
-5 reports with CSV export (employee, category, monthly, pending, payments)
-📊 Reports & Notifications
-Monthly payroll, department-wise salary, attendance summary, leave and payment history reports
-In-app notifications for leave, reimbursement and payroll events
-🔐 Security
-Role-based access control, login rate limiting, hashed reset tokens
-Private file storage for sensitive documents
-Session encryption enabled
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-👥 User Roles
-Role	Access
-Admin	Full access – users, employees, payroll, attendance, leave, reimbursements, reports, role assignments
-Manager	Review and approve team requests (leave, reimbursements)
-HR	Leave and reimbursement management, limited employee management
-CTO	Technical team oversight, payroll approval
-Employee	Own profile, attendance, leave requests, reimbursement claims, payslips
+## About Laravel
 
-🛠️ Tech Stack
-Backend: PHP 8.2+, Laravel 12
-Database: MySQL
-Frontend: Blade templates, custom CSS/JS (Vite + Tailwind tooling available)
-Email: Zoho ZeptoMail API
-Testing: PHPUnit
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-🏢 About
-Developed for Innobles.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
